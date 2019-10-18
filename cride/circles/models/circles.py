@@ -60,3 +60,21 @@ class Circle(CRideModel):
         """Meta class."""
 
         ordering = ['-rides_taken', '-rides_offered']
+
+
+"""
+# csv
+import csv
+
+# Import circles
+def import_csv(csv_filename):
+    with open(csv_filename, mode='r') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            circle = Circle(**row)
+            circle.save()
+            print(circle.name)
+
+
+import_csv("circles.csv")
+"""

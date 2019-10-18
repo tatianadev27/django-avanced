@@ -1,11 +1,11 @@
 """User model."""
 
-# Django
+#  Django
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.core.validators import RegexValidator
 
-# Utilities
+#  Utilities
 from cride.utils.models import CRideModel
 
 
